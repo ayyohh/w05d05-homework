@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chela+One|Libre+Barcode+128+Text" rel="stylesheet">
   </head>
   <body>
-    <h1>edit page</h1>
+    <h1 class="titles">edit page</h1>
 
     <form action="/balances/<%= balance.id%>?_method=PUT" method="POST">
       Date: <input type="input" name="date" placeholder="<%= balance.date %>">
       Amount: <input type="input" name="amount" placeholder="<%= balance.amount %>">
       <input type="submit">
     </form>
+    <a href="/balances">Go back</a>
   </body>
 </html>
