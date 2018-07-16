@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>show page</h1>
+
+    <h3>Date of payment: <%= balance.date %> </h3>
+  </br>
+    <h3>Amount of Payment: $<%= balance.amount %> </h3>
+    <a href="/balances/<%=balance.id%>/edit">Edit</a>
+
+    <form action="/balances/<%= balance.id %>?_method=DELETE" method="POST">
+      <input type="submit" value="DELETE">
+    </form>
+
+    <a href="/balances">Go back</a>
+
+  </body>
+</html>
